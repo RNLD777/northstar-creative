@@ -15,8 +15,8 @@ export default function ContactForm() {
     e.preventDefault();
     const subject = encodeURIComponent(`Project enquiry from ${name}`);
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject type: ${project}\nBudget: ${budget}\n\n${message}`);
-    setNotice("Your email app should open with the enquiry drafted. This demo does not store submissions.");
-    window.location.href = `mailto:hello@northstarcreative.example?subject=${subject}&body=${body}`;
+    setNotice("Your email app should open with your enquiry addressed to korirronald.work@gmail.com. Nothing is stored on this website.");
+    window.location.href = `mailto:korirronald.work@gmail.com?subject=${subject}&body=${body}`;
   }
 
   return <form className="contact-form" onSubmit={handleSubmit}>
